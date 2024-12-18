@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+    --text-color: #fff;
+    --main-color: #59B2F4;
+    --background-color: #111; 
+    --hover-color: #f4e04d;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+
+/* header section */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(17, 17, 17, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--main-color);
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: var(--hover-color);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    font-size: 1.6rem;
+    margin-left: 4rem;
+    font-weight: 600;
+    color: var(--main-color);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav a:hover, .nav a:active {
+    color: var(--hover-color);
+    transform: scale(1.1);
+}
+
+#header i {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+
+/* home section */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 10rem 5%;
+}
+
+.home-content {
+    text-align: center;
+    max-width: 700px;
+}
+
+.home-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--highlight-color);
+}
+
+.home-content h1 {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin-top: 1rem;
+    color: #ddd;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    object-fit: cover;
+    border: 5px solid var(--highlight-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Icons */
+i {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+i:hover {
+    color: #f4e04d;
+    transform: translateY(-5px);
+}
+
+/* about section */
+.about {
+    background-color: var(--text-color);
+    padding: 4rem 10%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.about p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about p span {
+    font-style: italic;
+    color: var(--highlight-color);
+}
+
+/* project section */
+.project {
+    background-color: var(--secondary-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#projects h2 {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image hover effect */
+.project img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: var(--main-color);
+    transition: color 0.3s ease;
+}
+
+.project:hover h3 {
+    color: var(--hover-color);
+}
+
+.project p {
+    font-size: 1.6rem;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.project:hover p {
+    color: #333;
+}
+
+#contact {
+    padding: 4rem 10%;
+    background-color: var(--text-color);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--background-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--background-color);
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1.6rem;
+}
+
+form button {
+    width: 80%;
+    padding: 1rem;
+    background-color: var(--background-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3b92d3;
+}
+
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    font-size: 1.4rem;
+}
+
+/* Landscape-specific styles */
+@media (orientation: landscape) {
+    body {
+        font-size: 1.8rem; /* Increase font size for landscape */
+    }
+
+    .home {
+        padding: 5rem 10%;
+    }
+
+    .project-gallery {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .project {
+        flex: 1 1 calc(33% - 2rem); /* Allow cards to scale dynamically in landscape */
+        max-width: 33%; /* Prevent cards from becoming too wide */
+    }
+
+    .about, #contact {
+        padding: 4rem 5%;
+    }
+
+    .nav {
+        font-size: 1.8rem; /* Adjust nav font size for better readability */
+    }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 1.4rem;
+    }
+
+    .nav {
+        display: none; /* Hide nav links on mobile */
+    }
+    
+    #header i {
+        display: block; /* Show the hamburger icon on mobile */
+    }
+    
+    #header i.active + .nav {
+        display: flex; /* Display the nav when the icon is clicked */
+        flex-direction: column;
+        position: absolute;
+        top: 3rem;
+        right: 5%;
+        background: rgba(17, 17, 17, 0.9);
+        padding: 1rem;
+        border-radius: 8px;
+    }
+    
+    .nav a {
+        margin-left: 0;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .project-gallery {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: stretch;
+    }
+
+    .project {
+        background-color: var(--secondary-bg);
+        padding: 2rem;
+        border-radius: 8px;
+        flex: 1 1 calc(30% - 2rem);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        max-width: 30%;
+    }
+
+    form input, form textarea, form button {
+        width: 90%;
+    }
+
+    .nav i {
+        font-size: 1.2rem;
+    }
+}
