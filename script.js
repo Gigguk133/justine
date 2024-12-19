@@ -1,14 +1,10 @@
-// Toggle navigation menu visibility on mobile
-document.addEventListener("DOMContentLoaded", () => {
-    const menuIcon = document.querySelector("#header i");
-    const nav = document.querySelector(".nav");
+// JavaScript to toggle the hamburger menu
+const hamburger = document.getElementById('hamburger');
+const nav = document.querySelector('.nav');
 
-    if (menuIcon && nav) {
-        // Toggle the active class to show/hide navigation menu
-        menuIcon.addEventListener("click", () => {
-            nav.classList.toggle("active");
-        });
-    }
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
 });
 
 // Handle form submission
